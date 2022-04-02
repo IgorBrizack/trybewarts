@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(209, 207, 207);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  margin-bottom: 10px;
+  height: 70px;
+  align-items: center;
+}
+
+.trybewarts-login {
+  display: flex;
+  padding: 10px;
+}
+
+.login-elements {
+  margin: auto 5px;
+  border-radius: 3px;
+  height: 30px;
+}
+
+#submit-button1{
+  width: 50px;
+  background-color: purple;
+  color: white;
+  font-weight: bold;
+}
+
+.input-elements {
+  height: 30px;
+  border-radius: 3px;
+  border-color: white;
+}
+
+.label-text {
+  font-size: 25px;
+  font-family: 'BIZ UDMincho', serif;
+}
+
+.label-text-child {
+  font-size: 20px;
+  font-family: 'BIZ UDMincho', serif;
+  margin: auto 10px;
+}
+
+.trybewarts-header-logo {
+  height: 70px;
+  padding: 5px;
+}
+
+#trybewarts-header-title {
+  text-align: center;
+  color: white;
+  font-size: 35px;
+}
+
+main , #evaluation-form {
+  display: flex;
+}
+
+main {
+  justify-content: space-around;
+}
+
+#evaluation-form {
+  width: 675px;
+  flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  width: 500px;
+}
+
+#aligment {
+  display: flex;
+}
+
+#label-family {
+  width: 500px;
+  display: flex;
+  /* flex-direction: column; */
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+footer {
+  font-size: 25px;
+  color: white;
+  margin-top: 15px;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(81, 79, 79);
+}
+
+.family {
+  width: 600px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+#label-space {
+  margin-left: 5px;
+}
+
+.notes {
+  display: flex;
+  width: 500px;
+  justify-content: space-around;
+}
+
+#submit-btn{
+  width: 100%;
+  background-color: purple;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.principal {
+  margin-bottom: 10px;
+}
+
+.middle {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#counter {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#textarea {
+  font-size: 17px;
+}

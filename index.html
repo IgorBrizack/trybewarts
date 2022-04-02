@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrybeWarts</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <img src="./images/trybewarts-header-logo.svg" alt="logo TrybeWarts" class="trybewarts-header-logo">
+        <h1 id="trybewarts-header-title">Trybewarts</h1>
+        <form action="get" class="trybewarts-login">
+            <input type="email" name="email" placeholder="Email" id="login" class="login-elements">
+            <input type="password" name="password" placeholder="Senha" id="senha" class="login-elements">
+            <button id="submit-button1" class="login-elements">Entrar</button>
+        </form>
+    </header>
+    <main>
+        <form action="" id="evaluation-form">
+            <div class="aligmnet principal">
+                <label for="input-name" class="label-text">Nome: <input type="text" id="input-name" placeholder=" Nome" class="input-elements"></label>
+                <label for="input-lastname" class="label-text">Sobrenome: <input type="text" id="input-lastname"
+                placeholder=" Sobrenome" class="input-elements"></label>
+            </div>
+            <div class="aligment principal">
+                <label for="input-email" class="label-text">Email: <input type="text" id="input-email" placeholder=" Email" class="input-elements"></label>
+                <label for="house" class="label-text">Casa: 
+                    <select name="house" id="house"> 
+                        <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+                        <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                        <option value="Corvinode" id="corvinode-house">Corvinode</option>
+                        <option value="Pytherina" id="pytherina-house">Pytherina</option>
+                    </select>
+                </label>
+            </div>
+            <hr>
+            <h2 id="label-family" class="label-text">Qual sua família?</h2> 
+            <div class="aligment family">
+                <div class="aligment">
+                    <label for="familia-frontend" class="label-text-child size"><input type="radio" name="family" value="Frontend" id="familia-frontend">Família Frontend</label>
+                </div>
+                <div class="aligment">
+                    <label for="backend" class="label-text-child size"><input type="radio" name="family" value="Backend" id="backend">Família Backend</label>
+                </div>
+                <div class="aligment">
+                    <label for="fullStack" class="label-text-child size"><input type="radio" name="family" value="FullStack" id="fullStack">Família FullStack</label>
+                </div>
+            </div>
+            <hr>
+            <h2 id="label-content" class="label-text middle">Qual conteúdo você está com mais vontade de aprender?</h2>
+            <div class="aligment family principal">
+                <label for="HoFs" class="label-text-child"><input type="checkbox" name="checkbox1" id="HoFs" value="HoFs" class="subject">HoFs</label>
+                <label for="Jest" class="label-text-child"><input type="checkbox" name="input-checkbox" id="Jest" value="Jest" class="subject">Jest</label>
+                <label for="Promises" class="label-text-child"><input type="checkbox" name="input-checkbox" id="Promises" value="Promises" class="subject">Promises</label>
+                <label for="React" class="label-text-child"><input type="checkbox" name="input-checkbox" id="React" value="React" class="subject">React</label>
+                <label for="SQL" class="label-text-child"><input type="checkbox" name="input-checkbox" id="SQL" value="SQL" class="subject">SQL</label>
+                <label for="Python" class="label-text-child"><input type="checkbox" name="input-checkbox" id="Python" value="Python" class="subject">Python</label>
+            </div> 
+            <hr>
+            <div class="aligment">
+                <h2 id="label-rate" class="label-text middle">Como você avalia a Trybewarts?</h2>
+                <div class="notes principal">
+                    <label for="label-1" class="aligmnet label-text"><input type="radio" id="label-1" value="1" name="rate">1</label>
+                    <label for="label-2" class="aligmnet label-text"><input type="radio" id="label-2" value="2" name="rate">2</label>
+                    <label for="label-3" class="aligmnet label-text"><input type="radio" id="label-3" value="3" name="rate">3</label>
+                    <label for="label-4" class="aligmnet label-text"><input type="radio" id="label-4" value="4" name="rate">4</label>
+                    <label for="label-5" class="aligmnet label-text"><input type="radio" id="label-5" value="5" name="rate">5</label>
+                    <label for="label-6" class="aligmnet label-text"><input type="radio" id="label-6" value="6" name="rate">6</label>
+                    <label for="label-7" class="aligmnet label-text"><input type="radio" id="label-7" value="7" name="rate">7</label>
+                    <label for="label-8" class="aligmnet label-text"><input type="radio" id="label-8" value="8" name="rate">8</label>
+                    <label for="label-9" class="aligmnet label-text "><input type="radio" id="label-9" value="9" name="rate">9</label>
+                    <label for="label-10" class="aligmnet label-text "><input type="radio" id="label-10" value="10" name="rate">10</label>
+                </div>
+            </div>
+            <label for="textarea" class="textarea label-text-child">Deixe seu comentário:</label>
+            <textarea name="textarea" id="textarea" cols="30" rows="10" maxlength="500" style="resize: none"></textarea>
+            <p id="counter" class="label-text-child principal">500</p>
+            <div class="aligment">
+                <input type="checkbox" name="agreement" id="agreement" class="subject" required >
+             <label for="agreement" id="label-infos" class="label-text-child">Você concorda com o uso das informações acima?</label>
+            </div>
+            <button type="submit" id="submit-btn" disabled>Enviar</button>
+        </form>
+        <img src="./images/trybewarts-colored.svg" alt="trybewartsColored" id="trybewarts-forms-logo">
+    </main>
+    <footer>
+        <p>Direitos reservados à Trybewarts©</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
